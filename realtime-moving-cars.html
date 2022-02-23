@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps + Firebase</title>
+    <link rel="stylesheet" href="css/style-maps.css">
+</head>
+<body>
+    <body onload="initMap()">
+        <div id="map" style="height: 100%;"></div>
+    
+        <!-- contador cars -->
+        <div id="over_map">
+            <div>
+                <span>Online Cars: </span><span id="cars">0</span>
+            </div>
+        </div>
+    
+        <!-- jQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        
+    
+        <!-- Firebase SDK-->
+        <!-- <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase.js"></script>
+        
+        
+        <!-- API KEY MAPS  -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_3VeFSPqQcB8jmnn5Ju8MO3EZPGg8Y_g&callback=initMap">
+        </script>
+        <!-- <script src="./vendor/jquery.easing.1.3.js"></script>
+        <script src="./vendor/markerAnimate.js"></script> -->
+        <script src="./vendor/SlidingMarker.js"></script>
+
+        <script src="tracker.js"></script>
+    
+    </body>
+</body>
+</html>
